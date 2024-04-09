@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <title>Home</title>
+</head>
+<body>
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+    <header>
+        <nav>
+            <div class="topnav">
+                <ul>
+                
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="pets.html">Pets</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Amna's Corner</h1>
+
+    </header>
+    <main id="main" >
+        <div>
+            <p>Welcome to My Corner, your go-to destination for all things pets, recipes, and travel! Explore a world of captivating content where we cater to your love for furry companions, culinary delights, and globetrotting adventures.
+                <p>
+                     It is currently <span id = "time"></span><br/>
+                </p>
+        </div>
+        <span id="datetime"></span>
+
+    <script>
+      function updateDateTime() {
+        const current = new Date();
+        const currentDateTime = current.toLocaleString();
+        document.querySelector('#datetime').textContent = currentDateTime;
+      }
+
+      // call the `updateDateTime` function every second
+      setInterval(updateDateTime, 1000);
+    </script>
+    </main>
+
+            <!-- Jackie Wolf -->
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+</body>
+</html>
